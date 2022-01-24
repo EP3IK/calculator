@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
 	int number1, number2, result;
 	char operator;
 	
-	printf("수식을 입력해주세요. ");
+	printf("수식을 입력해주세요. ([ex] 1 + 2): ");
 	scanf("%d %c %d", &number1, &operator, &number2);
 	
 	switch (operator)
@@ -55,5 +55,6 @@ int multi(int number1, int number2)
 int div(int number1, int number2)
 {
 	//TODO implementation
-	return 0;
+	float result = (float)number1 / (float)number2;
+	return result;
 }
